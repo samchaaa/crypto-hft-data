@@ -1,0 +1,13 @@
+2023-02-14 07:53:17,170 - MainThread - Expecting property name enclosed in double quotes: line 6 column 3 (char 112)
+Traceback (most recent call last):
+  File "C:\Users\sam\Documents\crypto-hft-data\main.py", line 50, in init
+    pairs_n_streams = get_streams(exchange)
+  File "C:\Users\sam\Documents\crypto-hft-data\helpers\helper.py", line 16, in get_streams
+    configs = json.loads(configs)
+  File "C:\Users\sam\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\sam\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\sam\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 6 column 3 (char 112)
